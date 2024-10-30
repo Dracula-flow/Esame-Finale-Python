@@ -13,3 +13,5 @@ Per il back-end, la web-app è gestita dalle librerie Python "Flask" ed "SQLAlch
 
 In questa versione, la pagina con elenco parziale è stata sostituita da una card nella Home.
 L'elenco totale è stato reso all'interno di una tabella.
+
+Per inizializzare la web-app, è necessario avviare un virtual environment.
