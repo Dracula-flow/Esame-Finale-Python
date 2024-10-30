@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}Iscriviti!{%endblock%}
+
+{% block content %}
+
+
+<form action="http://127.0.0.1:5000/participants" id="form" method="POST" class="mt-5 mb-5">
+    
+    <div class="container text-center mt-5 bg-secondary fit-content" style="width: 18rem; height:20rem">
+        <div class="mb-3">
+            <label for="insertName" class="form-label" style="font-size: medium; font-weight:bold; color: gainsboro;">Nome</label>
+            <input type="text" id="insertName" name="name" class="form-control" aria-describedby="nameHelp" required>
+        </div>
+        
+        <div class="mb-3">
+            <label for="insertSurname" class="form-label" style="font-size: medium; font-weight:bold; color: gainsboro;">Cognome</label>
+            <input type="text" id="insertSurname" name="surname" class="form-control" aria-describedby="surnameHelp" required>
+        </div>
+        
+        <div class="mb-3">
+            <label for="insertEmail" class="form-label" style="font-size: medium; font-weight:bold; color: gainsboro;">Email</label>
+            <input type="email" id="insertEmail" name="email" class="form-control" aria-describedby="emailHelp" required>
+        </div>
+        
+        <div class="container text-center">
+            <button type="submit" id="btn" form="form" value="Submit" style="font-weight:bold; color:black" onclick="return alert('Complimenti, ti sei appena iscritt*')">Invia</button>
+        </div>
+        
+    </div>
+</form>
+
+{% endblock %}
+

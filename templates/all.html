@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}Partecipanti{%endblock%}
+
+{%block content%}
+
+
+<table class="table table-light mt-5 mb-5">
+    <thead>
+      <tr>
+        <th scope="col">Numero</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Cognome</th>
+        <th scope="col">Email</th>
+      </tr>
+    </thead>
+    <tbody>
+        
+        {% for runner in runners %}
+        <tr>
+            <th scope="row">{{ runner[0] }}</th>
+            <td>{{ runner[1] }}</td>
+            <td>{{ runner[2] }}</td>
+            <td>{{ runner[3] }}</td>
+        </tr>
+        
+        {%endfor%}
+    </tbody>
+  </table>
+
+{% endblock %}
